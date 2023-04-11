@@ -59,7 +59,7 @@ app.get('/assets', (req, res) => {
       shuffledExisting.push(file);
     }
 
-    res.status(200).json(shuffledExisting);
+    res.status(200).json(shuffledExisting.map(({exists, ...keep}) => keep));
   });
 });
 
