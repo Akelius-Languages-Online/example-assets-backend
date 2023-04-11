@@ -1,0 +1,6 @@
+# MacOs
+.DS_Store
+
+# Emacs
+*.*~
+*~
